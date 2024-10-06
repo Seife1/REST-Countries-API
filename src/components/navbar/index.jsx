@@ -3,18 +3,22 @@ import { CountryContext } from "../../context";
 import { useContext } from "react";
 
 export default function Navbar() {
-  const { searchCountry, setSearchCountry, fetchCountry } = useContext(CountryContext);
+  const { searchCountry, setSearchCountry, fetchCountry, fetchAllCountries } = useContext(CountryContext);
 
   // Function to handle search submission
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchCountry(searchCountry); // Fetch the country based on the search input
+    setSearchCountry(""); // Clear the search input after submission
   };
 
   return (
     <nav className="flex justify-between items-center py-3 w-full fixed top-0 left-0 bg-white shadow-md z-50 px-4 lg:px-8">
       <h2 className="text-2xl font-semibold">
-        <NavLink to={"/"}>REST Countries API</NavLink>
+        <NavLink
+          onClick={fetchAllCountries}
+          to={"/"}>REST Countries API
+        </NavLink>
       </h2>
 
       {/* Search Form */}
@@ -38,7 +42,10 @@ export default function Navbar() {
       {/* Navigation Links */}
       <ul className="flex gap-5">
         <li>
-          <NavLink to="/" className="text-black hover:text-gray-700 duration-300">
+          <NavLink
+            onClick={fetchAllCountries}
+            to="/"
+            className="text-black hover:text-gray-700 duration-300">
             Home
           </NavLink>
         </li>

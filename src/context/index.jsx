@@ -25,6 +25,7 @@ export function CountryProvider({ children }) {
       setFilteredDataList(allData); // Initialize filtered list
       setCountryList(allData.slice(0, countriesPerPage)); // Show first page
       setLoading(false);
+      setSearchCountry(""); // Clear search input
     } catch (error) {
       console.error(error);
       setLoading(false);
@@ -37,6 +38,7 @@ export function CountryProvider({ children }) {
       setFilteredDataList(allDataList); // Reset filtered list when search is empty
       setCountryList(allDataList.slice(0, countriesPerPage)); // Reset to first page of all data
       setCurrentPage(1);
+      setSearchCountry(""); // Clear search input
       return; 
     }
 
@@ -81,6 +83,7 @@ export function CountryProvider({ children }) {
         searchCountry,
         setSearchCountry,
         fetchCountry,
+        fetchAllCountries,
         allDataList,
         loading,
         countryList,
