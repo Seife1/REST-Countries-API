@@ -3,7 +3,7 @@
 # Script to deploy the application
 echo "Building the application..."
 
-# Run the build command (assuming you use Vite)
+# Run the build command
 npm run build
 
 # Check if the build was successful

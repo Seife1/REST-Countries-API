@@ -2,6 +2,7 @@
   "name": "simple-web-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Seife1.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "dom": "^0.0.3",
@@ -33,6 +34,5 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.8"
-  },
-  "homepage": "https://github.com/Seife1/Seife1.github.io.git"
+  }
 }

@@ -42,16 +42,17 @@ This project is a web application that integrates the REST Countries v3 API to d
    npm run dev
    ```
 ## Project Structure
-
-    src/
-    ├── assets/             # Static assets like images
-    ├── components/         # Reusable components
-    ├── context/            # Context API for global state management
-    ├── pages/              # Pages
-    ├── App.css             # Global styling for the app
-    ├── App.jsx             # Main application component
-    ├── index.css           # Base styles
-    └── main.jsx            # Entry point
+   scripts/
+   ├── deploy.sh           # Script for automating build and deployment
+   src/
+   ├── assets/             # Static assets like images
+   ├── components/         # Reusable components
+   ├── context/            # Context API for global state management
+   ├── pages/              # Pages
+   ├── App.css             # Global styling for the app
+   ├── App.jsx             # Main application component
+   ├── index.css           # Base styles
+   └── main.jsx            # Entry point
 
 ## API Reference
 This project uses the REST Countries v3 API to fetch country data. The endpoints used are:
@@ -65,6 +66,25 @@ To build the project for production:
     npm run build
     ```
 This will generate a dist/ folder with the compiled code, ready to be deployed to any web server.
+
+## Deployment
+A shell script `deploy.sh` is provided to automate the build and deployment process to GitHub Pages.
+
+**Run the deploy script:**
+```bash
+./scripts/deploy.sh
+```
+This will:
+* Build the application using npm run build.
+* Commit and push the dist directory to the gh-pages branch.
+
+Make sure to set the correct permissions for the script before running it:
+```bash
+chmod +x ./scripts/deploy.sh
+```
+
+## Live Demo
+You can view the live demo [here](https://seife1.github.io/)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
