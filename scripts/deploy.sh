@@ -15,6 +15,5 @@ fi
 echo "Build successful. Deploying the application..."
 
 # Deploy to GitHub Pages
-git add dist && git commit -m "Deploy" && git push origin gh-pages
-
+npm run deploy
 echo "Deployment completed successfully!"
