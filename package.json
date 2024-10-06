@@ -2,7 +2,7 @@
   "name": "simple-web-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Seife1.github.io/",
+  "homepage": "https://seife1.github.io/REST-Countries-API/",
   "type": "module",
   "scripts": {
     "dev": "vite",
