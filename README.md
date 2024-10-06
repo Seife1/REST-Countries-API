@@ -42,6 +42,7 @@ This project is a web application that integrates the REST Countries v3 API to d
    npm run dev
    ```
 ## Project Structure
+   ```bash
    scripts/
    ├── deploy.sh           # Script for automating build and deployment
    src/
@@ -53,7 +54,8 @@ This project is a web application that integrates the REST Countries v3 API to d
    ├── App.jsx             # Main application component
    ├── index.css           # Base styles
    └── main.jsx            # Entry point
-
+   ```
+   
 ## API Reference
 This project uses the REST Countries v3 API to fetch country data. The endpoints used are:
 
