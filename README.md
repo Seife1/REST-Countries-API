@@ -60,12 +60,11 @@ This project uses the REST Countries v3 API to fetch country data. The endpoints
 * **All Countries**: https://restcountries.com/v3.1/all
 * **Country by Name**: https://restcountries.com/v3.1/name/{country}
 
-## Deployment
-To build the project for production:
-    ```bash
+## Running Locally
+To run the app locally:    
+```bash
     npm run build
-    ```
-This will generate a dist/ folder with the compiled code, ready to be deployed to any web server.
+```
 
 ## Deployment
 A shell script `deploy.sh` is provided to automate the build and deployment process to GitHub Pages.
