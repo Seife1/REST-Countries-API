@@ -85,7 +85,7 @@ chmod +x ./scripts/deploy.sh
 ```
 
 ## Live Demo
-You can view the live demo [here](https://seife1.github.io/)
+You can view the live demo [here](https://rest-countries-api-xi-lemon.vercel.app/)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
